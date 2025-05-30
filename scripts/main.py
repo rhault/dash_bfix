@@ -1,3 +1,6 @@
-from scripts.transform import sales
+from scripts.transform.sales import new_sales_data
+from datetime import datetime
 
-print(sales)
+updated_at = datetime.now()
+data = new_sales_data(updated_at)
+print(data)
